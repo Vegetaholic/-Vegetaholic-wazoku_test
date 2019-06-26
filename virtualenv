@@ -1,2 +1,2 @@
-cd /[path_to]/wazoku_test
+cd https://github.com/Vegetaholic/-Vegetaholic-wazoku_test
 python3.6 -m venv .
