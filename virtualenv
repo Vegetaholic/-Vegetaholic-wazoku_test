@@ -1,0 +1,2 @@
+cd /[path_to]/wazoku_test
+python3.6 -m venv .
