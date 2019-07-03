@@ -1,0 +1,26 @@
+ public static void main(String[] args)
+    {
+        // TODO code application logic here
+        char letter;
+        String string;
+        int count = 0;
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter search letter: ");
+        letter = input.nextLine().charAt(0); //input letter to search
+        
+        System.out.print("Enter string for search of a letter: ");
+        string = input.nextLine(); //input a string to search letter from
+     
+        for(int i = 0; i < string.length(); i++) // loop string every character for comparison
+        {
+            
+            if(string.charAt(i) == letter) // count how many times letter appeared
+            {
+                count++;
+            }
+            
+        }
+        
+        System.out.println(count); //display result
