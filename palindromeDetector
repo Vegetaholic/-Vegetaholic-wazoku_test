@@ -1,0 +1,18 @@
+public static void main(String[] args)
+    {
+        // TODO code application logic here
+        String phrase;
+        Scanner input = new Scanner(System.in); //create input object
+        
+        System.out.print("Enter string phrase: "); //creat string phrase
+        phrase = input.nextLine();
+        
+        String noSpace = phrase.replaceAll("\\s+",""); //remove phrase gabs between words
+        String noComma = noSpace.replace("'",""); //remove apostrophies from phrase
+        String lowerCase = noComma.toLowerCase(); //make phrase in lower cases
+        StringBuilder sb = new StringBuilder(lowerCase); //creat string builder object and place the phrase
+        String palindrome = sb.reverse().toString(); //reverse the phrase
+        boolean compare = lowerCase.equals(palindrome); //compare original phrase with reversed
+        
+        System.out.printf("That's %s a palindrome\n", compare? "" : "not"); //display result
+    }
